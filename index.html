@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <!-- bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- material icon -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg navbar-custom position-relative fixed-top sticky">
+        <div class="container">
+            <a class="navbar-brand text-uppercase logo" href="index.html">
+                Jober
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Search Jobs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="jobforyou.html">Job For You</a></li>
+                            <li><a class="dropdown-item" href="JobForFresher.html">Job For Fresher</a></li>
+                            <li><a class="dropdown-item" href="JobForWFH.html">Job For WFH</a></li>
+                            <li><a class="dropdown-item" href="JobForWomen.html">Job For Women</a></li>
+                            <li><a class="dropdown-item" href="JobForMen.html">Job For Men</a></li>
+                            <li><a class="dropdown-item" href="JobForStudent.html">Job For Student</a></li>
+                            <li><a class="dropdown-item" href="Part-TimeJob.html">Part-Time Job</a></li>
+                            <li><a class="dropdown-item" href="RemoteJob.html">Remote Job</a></li>
+                            <li><a class="dropdown-item" href="HybridJob.html">Hybrid Job</a></li>
+                            <li><a class="dropdown-item" href="CommonRules.html">Common Rules</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="JobForWFH.html">Work From Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="privacypolicy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="btn-primary ps-2 pe-2 py-1 rounded nav-link" href="Contact.html">Contact Us</a>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Start Home -->
+    <!-- <section class="home-section" id="home">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('image/img-1.jpg');">
+                    <div class="bg-overlay"></div>
+                    <div class="home-center">
+                        <div class="home-desc-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="home-content text-start">
+                                            <h1 class="title mt-4 pt-3 text-white text-uppercase">Why Wait? Portfolio<br>Right Now!</h1>
+                                            <p class="text-white mt-4 f-18">Vivamus sodales eleifend odio eget mollis Cras consectetur nisi quis pulvinar
+                                                <br> laoreet Nulla facilisi Maecenas eget velit laoreet.</p>
+                                            <div class="pt-1 mt-4">
+                                                <a href="#" class="btn btn-outline-light mt-2 me-3">Get Started</a>
+                                                <a href="#" class="btn btn-primary mt-2">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="carousel-item" style="background-image: url('image/img-2.jpg');">
+                    <div class="bg-overlay"></div>
+                    <div class="home-center">
+                        <div class="home-desc-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="home-content text-end text-white">
+                                            <h1 class="title mt-4 text-white text-uppercase">We Are a Web Agency <br> Focused On Quality</h1>
+                                            <p class="text-white mt-4 f-18">Vivamus sodales eleifend odio eget mollis Cras consectetur nisi quis pulvinar
+                                                <br> laoreet Nulla facilisi Maecenas eget velit laoreet.</p>
+                                            <div class="pt-1 mt-4">
+                                                <a href="#" class="btn btn-outline-light mt-2 me-3">Get Started</a>
+                                                <a href="#" class="btn btn-primary mt-2">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="carousel-item" style="background-image: url('image/img-3.jpg');">
+                    <div class="bg-overlay"></div>
+                    <div class="home-center">
+                        <div class="home-desc-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="home-content text-center">
+                                            <h1 class="mt-4 text-white text-uppercase">We're Giving Design <br> Solution & Idea.</h1>
+                                            <p class="text-white mt-4 f-18">Vivamus sodales eleifend odio eget mollis Cras consectetur nisi quis pulvinar
+                                                <br> laoreet Nulla facilisi Maecenas eget velit laoreet.</p>
+                                            <div class="pt-4 mt-1">
+                                                <a href="#" class="btn btn-outline-light mt-2 me-3">Get Started</a>
+                                                <a href="#" class="btn btn-primary mt-2">Purchase Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>  
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section> -->
+    <!-- <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>The Best Job Find Website</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-box">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23512890.379129887!2d-116.75595486021228!3d54.222073081699776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e1!3m2!1sen!2sin!4v1735281170615!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                 <div class="animated-images">
+                                <img src="image1.jpg" alt="Image 1" class="floating-image">
+                                <img src="image2.jpg" alt="Image 2" class="floating-image">
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+        <img src="image/banner/voice.png" class="light-opacity d-none d-lg-block" alt="" srcset="">
+        <div class="paddingclass"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 banner-contain position-relative ">
+                    <img src="image/banner/landing-slider-top-img-14.png" class="jobimage w-100" alt="" srcset="">
+                    <h2 class="mb-md-4">The Best <span class="text-primary"> Job Board</span> Around. <br>
+                        Welcome to StaffScout. </h2>
+                    <p>A remarkable theme designed specifically for creating comprehensible job boards with ease. Packed
+                        full with outstanding elements and features excellent for presenting & finding job opportunities
+                        as well as candidates.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-box">
+                        <!-- First Layer with Border -->
+                        <div class="image-layer">
+                            <img src="https://staffscout.qodeinteractive.com/wp-content/uploads/2017/10/landing-slider-top-img-10.png"
+                                alt="Layer 1" class="layer-image">
+                            <!-- Floating Images -->
+
+                        </div>
+
+                        <!-- Second Layer -->
+                        <div class="image-layer second-layer">
+                            <img src="https://staffscout.qodeinteractive.com/wp-content/uploads/2017/10/landing-slider-top-img-9.png"
+                                alt="Layer 2" class="layer-image">
+                        </div>
+
+                        <!-- Third Layer -->
+                        <div class="image-layer third-layer">
+                            <img src="https://staffscout.qodeinteractive.com/wp-content/uploads/2017/10/landing-slider-top-img-8.png"
+                                alt="Layer 3" class="layer-image">
+                        </div>
+                        <div class="animated-images">
+                            <img src="https://staffscout.qodeinteractive.com/wp-content/uploads/2017/10/landing-slider-top-img-2.png"
+                                alt="Floating 1" class="floating-image">
+                            <img src="https://staffscout.qodeinteractive.com/wp-content/uploads/2017/10/landing-slider-top-img-7.png"
+                                alt="Floating 2" class="floating-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block mb-4">
+                <div class="position-relative">
+                    <img src="image/banner/girls-anime.png" alt="" class="position-absolute girls-anime" srcset="">
+                    <img src="image/banner/1.png" alt="" class="position-absolute  silver-banner" srcset="">
+                    <img src="image/banner/2.png" alt="" class="position-absolute  blue-banner" srcset="">
+                </div>
+                <img src="image/banner/dotted.png" alt="" class="w-100" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ens Home -->
+
+    <!-- Start Services -->
+    <div class="section bg-light" id="service">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h3 class="fw-normal">Available<span class="text-primary ms-2">Requirement</span></h3>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box service-warning">
+                        <div class="mb-4">
+                            <i class="mdi mdi-spider-web service-icon"></i>
+                        </div>
+                        <h5 class="service-title text-dark fw-normal pt-1 mb-3">Web Design</h5>
+                        <p class="text-muted service-subtitle mb-3">Eaiharum quidem rerum facilis expedita distinctio
+                            this libero tempore quibusdam some advantage nobis.</p>
+                        <a class="read-more-icon text-decoration-none" href="#">Read More
+                            <i class="mdi mdi-arrow-right-thin align-middle ms-2 right-icon"></i>
+                        </a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box service-warning position-relative">
+                        <div class="mb-4">
+                            <i class="mdi mdi-language-xaml  service-icon"></i>
+                        </div>
+                        <h5 class="service-title text-dark fw-normal pt-1 mb-3">Development</h5>
+                        <p class="text-muted service-subtitle mb-3"> when our power of choice is untrammelled and when
+                            nothing prevents every pleasure is welcomed and every pain avoided.</p>
+                        <a class="read-more-icon text-decoration-none" href="#">Read More
+                            <i class="mdi mdi-arrow-right-thin align-middle ms-2 right-icon"></i>
+                        </a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box service-warning position-relative">
+                        <div class="mb-4">
+                            <i class="mdi mdi-webhook service-icon"></i>
+                        </div>
+                        <h5 class="service-title text-dark fw-normal pt-1 mb-3">SEO Marketing</h5>
+                        <p class="text-muted service-subtitle mb-3">All the Lorem Ipsum generators Internet tend to
+                            repeat predefined the necessary making generator is Internet.</p>
+                        <a class="read-more-icon text-decoration-none" href="#">Read More
+                            <i class="mdi mdi-arrow-right-thin align-middle ms-2 right-icon"></i>
+                        </a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box service-warning position-relative">
+                        <div class="mb-4">
+                            <i class="mdi mdi-angularjs service-icon"></i>
+                        </div>
+                        <h5 class="service-title text-dark fw-normal pt-1 mb-3">Angular Js</h5>
+                        <p class="text-muted service-subtitle mb-3">Consequuntur magni dolores there ratione voluptatem
+                            sequiy neasciunt. Neque porro quisquam dolorem ipsum lorem.</p>
+                        <a class="read-more-icon text-decoration-none" href="#">Read More
+                            <i class="mdi mdi-arrow-right-thin align-middle ms-2 right-icon"></i>
+                        </a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box service-warning position-relative">
+                        <div class="mb-4">
+                            <i class="mdi mdi-graphql service-icon"></i>
+                        </div>
+                        <h5 class="service-title text-dark fw-normal pt-1 mb-3">Graphics</h5>
+                        <p class="text-muted service-subtitle mb-3"> the other hand, we denounce rightey our indignation
+                            and dislike men beguiled and demoralized by pleasure of the moment.</p>
+                        <a class="read-more-icon text-decoration-none" href="#">Read More
+                            <i class="mdi mdi-arrow-right-thin align-middle ms-2 right-icon"></i>
+                        </a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box service-warning position-relative">
+                        <div class="mb-4">
+                            <i class="mdi mdi-react service-icon"></i>
+                        </div>
+                        <h5 class="service-title text-dark fw-normal pt-1 mb-3">Other</h5>
+                        <p class="text-muted service-subtitle mb-3">Principle of selection rejects pleasures to the
+                            secures other greater pleasuresfacilis expedita distinctio tempore.</p>
+                        <a class="read-more-icon text-decoration-none" href="#">Read More
+                            <i class="mdi mdi-arrow-right-thin align-middle ms-2 right-icon"></i>
+                        </a>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Start Skills -->
+    <div class="section" id="skill">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h3 class="fw-normal">Provided<span class="text-primary ms-2">Jobs</span></h3>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+            <div class="row vertical-content align-items-center">
+                <div class="col-lg-6 p-0">
+                    <div class="skill-box bg-white p-4 rounded shadow-lg">
+                        <h5>Best Skills Ever</h5>
+                        <!-- <p class="text-muted">All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                            chunks as necessary this the first true generator on the Internet.</p> -->
+                        <div class="skills">
+                            <div class="mt-4">
+                                <p class="fw-bold mb-2">Web Development</p>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar progress-bar-striped bg-primary rounded" role="progressbar"
+                                        aria-label="Example with label" style="width: 88%;" aria-valuenow="88"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <p class="progress-value fw-bold">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="fw-bold mb-2">Backend Development</p>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar progress-bar-striped bg-primary rounded" role="progressbar"
+                                        aria-label="Example with label" style="width: 50%;" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <p class="progress-value fw-bold">50%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="fw-bold mb-2">Graphics Design</p>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar progress-bar-striped bg-primary rounded" role="progressbar"
+                                        aria-label="Example with label" style="width: 32%;" aria-valuenow="32"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <p class="progress-value fw-bold">32%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="fw-bold mb-2">Other</p>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar progress-bar-striped bg-primary rounded" role="progressbar"
+                                        aria-label="Example with label" style="width: 69%;" aria-valuenow="69"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <p class="progress-value fw-bold">69%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-lg-6 mt-4 mt-lg-0 p-0 skill-img">
+                    <img src="image/skill.jpg" class="img-fluid img-thumbnail rounded" alt="image">
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+    <!-- End Skills -->
+
+
+
+    <!-- Start Portfolio -->
+    <div class="section" id="protfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h3 class="fw-normal">Latest<span class="text-primary ms-2">Jobs</span></h3>
+                        <p class="text-muted">Latest Job expedient serves to idea of the finished product that
+                            will soon be printed or disseminated fundamental digital company.</p>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="project-box card">
+                <div class="bookmark-label text-center">
+                    <a href="javascript:void(0)" class="text-white align-middle"><i class="mdi mdi-star"></i></a>
+                </div>
+                <div class="p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <div class="text-center mb-4 mb-md-0">
+                                <a href="javascript:void(0)"><img src="image/pro-1.jpg" alt="image"
+                                        class="img-fluid rounded-3"></a>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="mb-2 mb-md-0">
+                                <h5 class="fs-18 mb-1"><a href="javascript:void(0)"
+                                        class="text-dark text-decoration-none">EdWeb Decommissioning</a>
+                                </h5>
+                                <p class="text-muted fs-14 mb-0">Web Developer</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0">
+                                    <i class="mdi mdi-map-marker text-primary me-1"></i>
+                                </div>
+                                <p class="text-muted mb-0">Ramona-Schäfer-Weg, Berlin</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <p class="text-muted mb-2"><span>$</span>1500-2400/m</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <span class="badge bg-soft-success f-13 mt-1">Full Time</span>
+                                <span class="badge bg-soft-info f-13 mt-1">Private</span>
+                                <span class="badge bg-soft-warning f-13 mt-1">Urgent</span>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+                <div class="p-3 bg-light">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark fw-medium">Due Date :</span> 13
+                                    December
+                                    2022</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-6 col-md-5">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark">Notes :</span>
+                                    Using Html, Scss, JS, Bootstrap Carefully </p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-2 col-md-3">
+                            <div class="text-start text-md-end">
+                                <a href="#applyNow" data-bs-toggle="modal" class="text-decoration-none text-muted">Apply
+                                    Now <i class="mdi mdi-chevron-double-right"></i></a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div>
+            <!-- end project-box -->
+
+            <div class="project-box card mt-4">
+                <div class="bookmark-label text-center">
+                    <a href="javascript:void(0)" class="text-white align-middle"><i class="mdi mdi-star"></i></a>
+                </div>
+                <div class="p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <div class="text-center mb-4 mb-md-0">
+                                <a href="javascript:void(0)"><img src="image/Pro-2.jpg" alt="image"
+                                        class="img-fluid rounded-3"></a>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="mb-2 mb-md-0">
+                                <h5 class="fs-18 mb-1"><a href="javascript:void(0)"
+                                        class="text-dark text-decoration-none">Hotel Management Sys</a>
+                                </h5>
+                                <p class="text-muted fs-14 mb-0">Phython Developer</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0">
+                                    <i class="mdi mdi-map-marker text-primary me-1"></i>
+                                </div>
+                                <p class="text-muted mb-0">26 Karlie Mills, Fionaberg</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <p class="text-muted mb-2"><span>$</span>1740-2000/m</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <span class="badge bg-soft-danger f-13 mt-1">Part Time</span>
+                                <span class="badge bg-soft-info f-13 mt-1">General</span>
+                                <span class="badge bg-soft-warning f-13 mt-1">Urgent</span>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+                <div class="p-3 bg-light">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark fw-medium">Due Date :</span> 29
+                                    December
+                                    2022</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-6 col-md-5">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark">Notes :</span>
+                                    Using Html, Scss, JS, Djengo, Bootstrap Carefully </p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-2 col-md-3">
+                            <div class="text-start text-md-end">
+                                <a href="#applyNow" data-bs-toggle="modal" class="text-decoration-none text-muted">Apply
+                                    Now <i class="mdi mdi-chevron-double-right"></i></a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div>
+            <!-- end project-box -->
+
+            <div class="project-box card mt-4">
+                <div class="bookmark-label text-center">
+                    <a href="javascript:void(0)" class="text-white align-middle"><i class="mdi mdi-star"></i></a>
+                </div>
+                <div class="p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <div class="text-center mb-4 mb-md-0">
+                                <a href="javascript:void(0)"><img src="image/Pro-3.jpg" alt="image"
+                                        class="img-fluid rounded-3"></a>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="mb-2 mb-md-0">
+                                <h5 class="fs-18 mb-1"><a href="javascript:void(0)"
+                                        class="text-dark text-decoration-none">Oracle Database</a>
+                                </h5>
+                                <p class="text-muted fs-14 mb-0">Angular Developer</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0">
+                                    <i class="mdi mdi-map-marker text-primary me-1"></i>
+                                </div>
+                                <p class="text-muted mb-0">Hasan-Keller-Strabe, Clarkeview</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <p class="text-muted mb-2"><span>$</span>1300-1850/m</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <span class="badge bg-soft-success f-13 mt-1">Full Time</span>
+                                <span class="badge bg-soft-info f-13 mt-1">Private</span>
+                                <span class="badge bg-soft-warning f-13 mt-1">Urgent</span>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+                <div class="p-3 bg-light">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark fw-medium">Due Date :</span> 08
+                                    January
+                                    2023</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-6 col-md-5">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark">Notes :</span>
+                                    Using Html, Scss, JS, Djengo, Bootstrap Carefully </p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-2 col-md-3">
+                            <div class="text-start text-md-end">
+                                <a href="#applyNow" data-bs-toggle="modal" class="text-decoration-none text-muted">Apply
+                                    Now <i class="mdi mdi-chevron-double-right"></i></a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div>
+            <!-- end project-box -->
+
+            <div class="project-box card mt-4">
+                <div class="bookmark-label text-center">
+                    <a href="javascript:void(0)" class="text-white align-middle"><i class="mdi mdi-star"></i></a>
+                </div>
+                <div class="p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <div class="text-center mb-4 mb-md-0">
+                                <a href="javascript:void(0)"><img src="image/pro-4.jpg" alt="image"
+                                        class="img-fluid rounded-3"></a>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="mb-2 mb-md-0">
+                                <h5 class="fs-18 mb-1"><a href="javascript:void(0)"
+                                        class="text-dark text-decoration-none">Wilkie Building Hybrid</a>
+                                </h5>
+                                <p class="text-muted fs-14 mb-0">ReactJS Developer</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-3">
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0">
+                                    <i class="mdi mdi-map-marker text-primary me-1"></i>
+                                </div>
+                                <p class="text-muted mb-0">Larkin Grove, Alabama</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <p class="text-muted mb-2"><span>$</span>1150-1900/m</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-2">
+                            <div>
+                                <span class="badge bg-soft-danger f-13 mt-1">Part Time</span>
+                                <span class="badge bg-soft-info f-13 mt-1">Private</span>
+                                <span class="badge bg-soft-warning f-13 mt-1">Urgent</span>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+                <div class="p-3 bg-light">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark fw-medium">Due Date :</span> 12
+                                    January
+                                    2023</p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-6 col-md-5">
+                            <div>
+                                <p class="text-muted mb-0"><span class="text-dark">Notes :</span>
+                                    Using Html, Scss, JS, Bootstrap, React Carefully </p>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-2 col-md-3">
+                            <div class="text-start text-md-end">
+                                <a href="#applyNow" data-bs-toggle="modal" class="text-decoration-none text-muted">Apply
+                                    Now <i class="mdi mdi-chevron-double-right"></i></a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div>
+            <!-- end project-box -->
+        </div>
+    </div>
+    <!-- End Portfolio -->
+
+    <!-- Start Contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h3 class="fw-normal">Get<span class="text-primary ms-2">In Touch</span></h3>
+                        <p class="text-muted">Contact us expedient serves to idea of the finished product omnis dolor
+                            repellendus printed or disseminated consectetur adipiscing.</p>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 d-none">
+                    <div>
+                        <p class="text-muted mt-4">
+                            <span class="fw-bold ">Customer care:</span><br>
+                            <span class="d-block mt-2">+1 856 485 7894</span>
+                        </p>
+                        <p class="text-muted mt-4"><span class="fw-bold ">Office Address:</span><br>
+                            <span class="d-block mt-2">5, Jalan U-Thant, AR 70917</span>
+                        </p>
+                        <p class="text-muted mt-4"><span class="fw-bold ">Email Address:</span><br>
+                            <span class="d-block mt-2">Meridian@gmail.com</span>
+                        </p>
+                        <p class="text-muted mt-4">
+                            <span class="fw-bold ">Office Time:</span><br>
+                            <span class="d-block mt-2">+9:00AM To 6:00PM</span>
+                        </p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-lg-12">
+                    <div class="custom-form">
+                        <div id="message"></div>
+                        <form action="https://formspree.io/f/mnnnpobp" name="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="First name">
+                                    </div>
+                                </div><!-- end col -->
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="Last name">
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <input name="email" id="email" type="email" class="form-control"
+                                            placeholder="Your email">
+                                    </div>
+                                </div><!-- end col -->
+
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <input name="number" id="number" type="number" class="form-control"
+                                            placeholder="Phone Number">
+                                    </div>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-3">
+                                        <textarea name="comments" id="comments" rows="5" class="form-control"
+                                            placeholder="Your message"></textarea>
+                                    </div>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="mt-3">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary"
+                                            value="Send Message">
+                                    </div>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </form>
+                        <!-- end form -->
+                    </div>
+                </div><!-- end col --> 
+            </div><!-- end row -->
+        </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Start CTA -->
+    <div class="section cta">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div>
+                        <h2 class="text-white">Join Our Portal</h2>
+                        <p class="text-white-50 mb-0"> The generated Lorem Ipsum is therefore always free from
+                            repetition</p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-lg-5">
+                    <div class="cta-box text-end">
+                        <form action="#">
+                            <input placeholder="Your Email Address" type="text">
+                            <button type="submit" class="btn btn-light">Apply Now</button>
+                        </form><!-- end form -->
+                    </div>
+                </div><!--end col -->
+            </div><!-- end row -->
+            <img src="image/cta-bg.png" class="cta-img" alt="image">
+        </div>
+    </div>
+    <!-- End CTA -->
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Fro Fresher</title>
+    <!-- bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- material icon -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg navbar-custom position-relative fixed-top sticky">
+        <div class="container">
+            <a class="navbar-brand text-uppercase logo" href="index.html">
+                Jober
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Search Jobs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="jobforyou.html">Job For You</a></li>
+                            <li><a class="dropdown-item" href="JobForFresher.html">Job For Fresher</a></li>
+                            <li><a class="dropdown-item" href="JobForWFH.html">Job For WFH</a></li>
+                            <li><a class="dropdown-item" href="JobForWomen.html">Job For Women</a></li>
+                            <li><a class="dropdown-item" href="JobForMen.html">Job For Men</a></li>
+                            <li><a class="dropdown-item" href="JobForStudent.html">Job For Student</a></li>
+                            <li><a class="dropdown-item" href="Part-TimeJob.html">Part-Time Job</a></li>
+                            <li><a class="dropdown-item" href="RemoteJob.html">Remote Job</a></li>
+                            <li><a class="dropdown-item" href="HybridJob.html">Hybrid Job</a></li>
+                            <li><a class="dropdown-item" href="CommonRules.html">Common Rules</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="JobForWFH.html">Work From Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="privacypolicy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="btn-primary ps-2 pe-2 py-1 rounded nav-link" href="Contact.html">Contact Us</a>
+    </nav>
+    <!-- End Nav -->
+
+    <div class="container mt-5">
+        <h2 class="text-center">Apply Now for the Job</h2>
+        <form action="https://formspree.io/f/mnnnpobp" method="POST" class="mt-4 col-md-7 mx-auto my-4">
+            <!-- Full Name -->
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+            
+            <!-- Email Address -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <!-- Job Position -->
+            <div class="mb-3">
+                <label for="jobPosition" class="form-label">Job Position</label>
+                <select class="form-select" id="jobPosition" name="jobPosition" required>
+                    <option value="" disabled selected>Select the Job Position</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Mobile Developer">Mobile Developer</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Work Status -->
+            <div class="mb-3">
+                <label for="workStatus" class="form-label">Work Status</label>
+                <select class="form-select" id="workStatus" name="workStatus" required>
+                    <option value="" disabled selected>Select your Work Status</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="Experience">Experience</option>
+                </select>
+            </div>
+
+            <!-- Location -->
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <!-- Upload Resume -->
+            <div class="mb-3">
+                <label for="resume" class="form-label">Upload Resume</label>
+                <input type="file" class="form-control" id="resume" name="resume" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Apply Now</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Start CTA -->
+    <div class="section cta">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div>
+                        <h2 class="text-white">Join Our Portal</h2>
+                        <p class="text-white-50 mb-0"> The generated Lorem Ipsum is therefore always free from
+                            repetition</p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-lg-5">
+                    <div class="cta-box text-end">
+                        <form action="#">
+                            <input placeholder="Your Email Address" type="text">
+                            <button type="submit" class="btn btn-light">Apply Now</button>
+                        </form><!-- end form -->
+                    </div>
+                </div><!--end col -->
+            </div><!-- end row -->
+            <img src="image/cta-bg.png" class="cta-img" alt="image">
+        </div>
+    </div>
+    <!-- End CTA -->
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
