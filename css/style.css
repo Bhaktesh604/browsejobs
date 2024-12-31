@@ -831,3 +831,9 @@ textarea.form-control {
     right: -40px;
 }
 }
+@media (max-width: 575px) {
+  .skill-box .progress-value {
+      /* top: -34px; */
+      right: -45px;
+  }
+}
