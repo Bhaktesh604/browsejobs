@@ -435,7 +435,18 @@ p {
     width: 20%;
   }
 
-  
+  .navbar .logo img {
+    width: 150px !important;
+  }
+
+  .jobimage {
+    width: 290px !important;
+  }
+  .section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
 }
 
 
@@ -503,21 +514,26 @@ p {
   position: absolute;
   top: -200px;
 }
+
 .girls-anime {
   top: -146px;
   left: 18%;
 }
-.silver-banner{
+
+.silver-banner {
   top: -180px;
   left: -3%;
 }
-.blue-banner{
+
+.blue-banner {
   top: -100px;
   left: 30%;
 }
-.project-box{
+
+.project-box {
   margin-bottom: 20px;
 }
+
 /* Services */
 
 .service-box {
@@ -678,13 +694,25 @@ p {
   .paddingclass {
     padding: 60px;
   }
+
   .floating-image:nth-child(1) {
     width: 60px;
   }
+
   .floating-image:nth-child(2) {
     top: 60%;
     left: 72%;
     width: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .logo img {
+    width: 200px !important;
+  }
+
+  .jobimage {
+    width: 100% !important;
   }
 }
 
@@ -788,4 +816,9 @@ textarea.form-control {
 
 .footer-link a:hover {
   color: #212529;
+}
+@media (max-width:767px) {
+  .cta .cta-box button{
+    right: 10px;
+  }
 }
