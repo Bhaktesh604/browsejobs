@@ -438,6 +438,7 @@ p {
   .floating-image {
     width: 20%;
   }
+  
 
   .navbar .logo img {
     width: 150px !important;
@@ -825,4 +826,8 @@ textarea.form-control {
   .cta .cta-box button{
     right: 10px;
   }
+  .skill-box .progress-value { 
+    top: -34px;
+    right: -40px;
+}
 }
