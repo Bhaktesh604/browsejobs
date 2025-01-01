@@ -743,7 +743,7 @@ p {
 
 .cta .cta-box button {
   position: absolute;
-  top: 0px;
+  /* top: ; */
   right: 0px;
   outline: none !important;
   border-radius: 0px 5px 5px 0px;
@@ -776,7 +776,7 @@ p {
   width: 200px;
   position: absolute;
   top: -5pxpx;
-  left: -84px;
+  left: -87px;
   transform: rotate(-45deg);
   z-index: 1;
   color: #fff;
@@ -831,9 +831,18 @@ textarea.form-control {
     right: -40px;
 }
 }
+.cta ul{
+  list-style: none;
+}
+.cta ul li{
+  margin: 0px 10px;
+}
 @media (max-width: 575px) {
   .skill-box .progress-value {
       /* top: -34px; */
       right: -45px;
+  } 
+  .cta ul li{
+    margin: 0px 5px;
   }
 }
