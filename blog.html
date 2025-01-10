@@ -40,6 +40,33 @@
 
         gtag('config', 'G-D6WGSHDGPL');
     </script>
+    <style>
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: scale(1.02);
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .blog-description {
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -93,87 +120,53 @@
     </nav>
     <!-- End Nav -->
 
-    <div class="container mt-5">
-        <h2 class="text-center">Apply Now for the Job</h2>
-        <form action="https://formspree.io/f/mnnnpobp" method="POST" class="mt-4 col-md-7 mx-auto my-4">
-            <!-- Full Name -->
-            <div class="mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullName" name="fullName" required>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Our Blog</h1>
+        <div class="row g-4">
+            <!-- Blog Post 1 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="image/blog/1.jpg" alt="Blog 1">
+                    </div>
+                    <div class="p-3">
+                        <span class="blog-tag">Remote Work</span>
+                        <h3 class="blog-title">How to Find Remote Jobs</h3>
+                        <p class="blog-description">Finding remote jobs has become easier than ever with platforms like Upwork, and Indeed offering a wide range of opportunities. Tailor your resume and LinkedIn profile to highlight your remote work skills, such as self-discipline and time management. Networking online and joining relevant remote work communities can also help you connect with hiring companies.</p>
+                        <a href="blog-details-1.html" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
             </div>
-
-            <!-- Email Address -->
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+            <!-- Blog Post 2 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="image/blog/2.jpg" alt="Blog 2">
+                    </div>
+                    <div class="p-3">
+                        <span class="blog-tag">Work from Home</span>
+                        <h3 class="blog-title">Work from Home Productivity</h3>
+                        <p class="blog-description">Staying productive while working from home requires creating a structured routine and minimizing distractions. Set up a dedicated workspace, use productivity tools like time trackers, and prioritize tasks to stay on top of deadlines. Taking regular breaks and setting clear work-life boundaries also ensures you maintain focus without burnout.</p>
+                        <a href="blog-details-2.html" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
             </div>
-
-            <!-- Phone Number -->
-            <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" name="phone" required>
+            <!-- Blog Post 3 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="image/blog/3.jpg" alt="Blog 3">
+                    </div>
+                    <div class="p-3">
+                        <span class="blog-tag">Hybrid Jobs</span>
+                        <h3 class="blog-title">Top Skills for Hybrid Jobs</h3>
+                        <p class="blog-description">In hybrid work environments, flexibility, communication, and collaboration are essential skills. Being proficient with digital tools, managing your time effectively, and demonstrating strong problem-solving abilities will set you apart. Adaptability to different working environments and the ability to self-manage are highly valued in hybrid roles.</p>
+                        <a href="blog-details-3.html" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
             </div>
-
-            <!-- Job Position -->
-            <div class="mb-3">
-                <label for="jobPosition" class="form-label">Job Position</label>
-                <select class="form-select" id="jobPosition" name="jobPosition" required>
-                    <option value="" disabled selected>Select the Job Position</option>
-                    <option value="Web Developer">Web Developer</option>
-                    <option value="Mobile Developer">Mobile Developer</option>
-                    <option value="Graphic Designer">Graphic Designer</option>
-                    <option value="Project Manager">Project Manager</option>
-                    <option value="Software Engineer">Software Engineer</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-
-            <!-- Work Status -->
-            <div class="mb-3">
-                <label for="workStatus" class="form-label">Work Status</label>
-                <select class="form-select" id="workStatus" name="workStatus" required>
-                    <option value="" disabled selected>Select your Work Status</option>
-                    <option value="Fresher">Fresher</option>
-                    <option value="Experience">Experience</option>
-                </select>
-            </div>
-
-            <!-- Location -->
-            <div class="mb-3">
-                <label for="location" class="form-label">Location</label>
-                <input type="text" class="form-control" id="location" name="location" required>
-            </div>
-
-            <!-- Gender -->
-            <div class="mb-3">
-                <label for="gender" class="form-label">Gender</label>
-                <select class="form-select" id="gender" name="gender" required>
-                    <option value="" disabled selected>Select your Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-
-            <!-- Address -->
-            <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
-            </div>
-
-            <!-- Upload Resume -->
-            <div class="mb-3">
-                <label for="resume" class="form-label">Upload Resume</label>
-                <input type="file" class="form-control" id="resume" name="resume" required>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary">Apply Now</button>
-            </div>
-        </form>
+        </div>
     </div>
-
 
     <!-- Start CTA -->
     <div class="section cta">
