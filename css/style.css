@@ -933,3 +933,9 @@ textarea.form-control {
   border-radius: 10px;
   background: white;
 }
+.blog-card {
+  display: none; /* Initially hide all blog cards */
+}
+.blog-card.visible {
+  display: block; /* Show visible blog cards */
+}
