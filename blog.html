@@ -93,10 +93,10 @@
             <a class="btn-primary ps-2 pe-2 py-1 rounded nav-link d-none d-md-block" href="Contact.html">Contact Us</a>
     </nav>
     <!-- End Nav -->
-
+    <!-- id="blogContainer" -->
     <div class="container my-5">
         <h2 class="text-center mb-4">Our Blog</h2>
-        <div class="row g-4"  id="blogContainer">
+        <div class="row g-4" >
             <!-- Blog Post 1 -->
             <div class="col-md-4">
                 <div class="blog-card">
@@ -365,8 +365,7 @@
                         </h3>
                         <p class="blog-description">Women can find a variety of career paths that offer both
                             professional growth and work-life balance. This post highlights job opportunities in
-                            flexible sectors and provides resources for women seeking fulfilling careers on their own
-                            terms.</p>
+                            flexible sectors and provides resources for women seeking fulfilling  .</p>
 
                         <a href="job-opportunities-for-women.html" class="btn btn-primary btn-sm">Read More</a>
                     </div>
@@ -402,7 +401,7 @@
                         </h3>
                         <p class="blog-description">Hybrid jobs are rapidly gaining popularity, offering a blend of
                             in-office and remote work. Learn which hybrid job roles are in demand and how they offer a
-                            balance of career advancement and flexibility in today's workforce.</p>
+                            balance of career.</p>
 
                         <a href="top-hybrid-jobs-flexibility-growth.html" class="btn btn-primary btn-sm">Read More</a>
                     </div>
@@ -495,7 +494,7 @@
                 </div>
             </div> -->
             <div class="text-center mt-4">
-                <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
+                <!-- <button id="loadMoreBtn" class="btn btn-primary">Load More</button> -->
                 <a href="index.html" type="" class="btn btn-primary">Back</a>
 
             </div>
@@ -561,14 +560,13 @@
     <!-- custom js -->
     <script src="js/app.js"></script>
 
-    <script>
-        // JavaScript to handle the "Load More" functionality
+    <!-- <script> 
         document.addEventListener('DOMContentLoaded', () => {
-            const blogCards = document.querySelectorAll('.blog-card'); // Select all blog cards
+            const blogCards = document.querySelectorAll('.blog-card');  
             const loadMoreBtn = document.getElementById('loadMoreBtn');
 
-            let visibleCount = 0; // Tracks how many blogs are currently visible
-            const blogsPerClick = 9; // Number of blogs to show per click
+            let visibleCount = 0;  
+            const blogsPerClick = 9;  
 
             const showBlogs = () => {
                 for (let i = visibleCount; i < visibleCount + blogsPerClick; i++) {
@@ -577,20 +575,17 @@
                     }
                 }
                 visibleCount += blogsPerClick;
-
-                // Hide the button if all blogs are visible
+ 
                 if (visibleCount >= blogCards.length) {
                     loadMoreBtn.style.display = 'none';
                 }
             };
-
-            // Initial load
+ 
             showBlogs();
-
-            // Add event listener to the button
+ 
             loadMoreBtn.addEventListener('click', showBlogs);
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
