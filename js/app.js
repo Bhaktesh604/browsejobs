@@ -1,9 +1,9 @@
-// Counter.js
+ 
 
 function numCounter(tagId,maxCount,speed){
     var initialNumber = 0;
     function counter(){
-        document.getElementById(tagId).innerHTML = initialNumber;
+        jobs-for-fresher-blog-details.html
         ++initialNumber;
     }
     var counterDelay = setInterval(counter,speed);
@@ -16,5 +16,3 @@ function numCounter(tagId,maxCount,speed){
 
 numCounter("Projects",634,10);
 numCounter("Clients",589,10);
-
-//

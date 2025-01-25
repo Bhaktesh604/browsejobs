@@ -880,7 +880,8 @@ textarea.form-control {
 .blog-description {
   color: #555;
 }
-.missionbg{
+
+.missionbg {
   background-image: url(../image/about/1.jpg) !important;
   background-position: center center !important;
   width: 100% !important;
@@ -891,9 +892,12 @@ textarea.form-control {
   background-attachment: fixed;
   color: #fff !important;
 }
-.missionbg h2, .missionbg p{
+
+.missionbg h2,
+.missionbg p {
   color: #fff !important;
 }
+
 /* about */
 .about .section {
   padding: 3rem 2rem;
@@ -902,7 +906,7 @@ textarea.form-control {
 .about .section:nth-child(even) {
   background: #f4f4f4;
 }
- 
+
 
 .about .section img {
   max-width: 100%;
@@ -933,9 +937,30 @@ textarea.form-control {
   border-radius: 10px;
   background: white;
 }
+
 /* .blog-card {
   display: none; 
 }
 .blog-card.visible {
   display: block; 
 } */
+.blog-card .blog-title {
+  display: -webkit-box; /* Enables the flexible box layout */
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  -webkit-box-orient: vertical; /* Vertical box layout */
+  overflow: hidden; /* Hides overflowing content */
+  text-overflow: ellipsis; /* Adds "..." at the end of the text */
+}
+.blog-card .blog-description {
+
+  display: -webkit-box;
+  /* Enables the flexible box layout */
+  -webkit-line-clamp: 2;
+  /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  /* Vertical box layout */
+  overflow: hidden;
+  /* Hides overflowing content */
+  text-overflow: ellipsis;
+  /* Adds "..." at the end of the text */
+}
