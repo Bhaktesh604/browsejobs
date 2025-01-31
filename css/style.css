@@ -849,6 +849,9 @@ textarea.form-control {
     /* top: -34px; */
     right: -45px;
   }
+  img{
+    margin-top: 10px;
+  }
 
   .cta ul li {
     margin: 0px 5px;
@@ -937,13 +940,7 @@ textarea.form-control {
   border-radius: 10px;
   background: white;
 }
-
-/* .blog-card {
-  display: none; 
-}
-.blog-card.visible {
-  display: block; 
-} */
+ 
 .blog-card .blog-title {
   display: -webkit-box; /* Enables the flexible box layout */
   -webkit-line-clamp: 2; /* Number of lines to display */
