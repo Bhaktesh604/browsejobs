@@ -2,1218 +2,187 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for SEO -->
+    <title>Top Blogs | Expert Insights and Tips | YourWebsiteName</title>
+
+    <!-- Meta Description for SEO -->
     <meta name="description"
-        content="Search the latest job listings, career opportunities, and employment resources. Find remote, part-time, and full-time jobs in various industries, including IT, healthcare, and marketing.">
+        content="Explore the top 10 blogs covering a wide range of topics with expert insights and tips. Stay updated with the latest trends, guides, and informative blog posts.">
 
+    <!-- Meta Keywords for SEO -->
     <meta name="keywords"
-        content="jobs, job search, career opportunities, employment, job listings, remote jobs, work from home jobs, job vacancies, find jobs, career growth, part-time jobs, full-time jobs, job vacancies, IT jobs, healthcare jobs, marketing jobs, software development jobs, sales jobs, entry-level jobs, internships">
-    <meta name="author" content="BrowseJobs">
-    <meta property="og:title" content="BrowseJobs - Find Your Dream Job">
+        content="top blogs, latest blogs, expert blogs, blog articles, informative blogs, blog posts, blog trends, best blogs">
+
+    <!-- Meta Author for SEO -->
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Top Blogs | Expert Insights and Tips | YourWebsiteName">
     <meta property="og:description"
-        content="BrowseJobs is your go-to platform for job opportunities. Discover the perfect career match today!">
-    <meta property="og:url" content="https://browsejobs.vercel.app">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://browsejobs.vercel.app/og-image.jpg">
+        content="Explore the top 10 blogs covering a wide range of topics with expert insights and tips. Stay updated with the latest trends, guides, and informative blog posts.">
+    <meta property="og:image" content="image/og-image.jpg">
+    <!-- Use an optimized image for better visibility when shared on social media -->
+    <meta property="og:url" content="https://www.yourwebsite.com/top-blogs">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BrowseJobs - Find Your Dream Job">
+    <meta name="twitter:title" content="Top Blogs | Expert Insights and Tips | YourWebsiteName">
     <meta name="twitter:description"
-        content="BrowseJobs is your go-to platform for job opportunities. Discover the perfect career match today!">
-    <meta name="twitter:image" content="https://browsejobs.vercel.app/twitter-image.jpg">
-    <title>Browse Jobs | Find Job Opportunities Online </title>
-    <!-- bootstrap css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- material icon -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- style -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6WGSHDGPL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        content="Explore the top 10 blogs covering a wide range of topics with expert insights and tips. Stay updated with the latest trends, guides, and informative blog posts.">
+    <meta name="twitter:image" content="image/og-image.jpg">
 
-        gtag('config', 'G-D6WGSHDGPL');
+    <!-- Favicon for the Website -->
+    <link rel="icon" href="image/favicon.png" type="image/x-icon">
+
+    <!-- Canonical Link to avoid duplicate content -->
+    <link rel="canonical" href="https://www.yourwebsite.com/top-blogs">
+
+    <!-- Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Blog",
+      "name": "Top Blogs | Expert Insights and Tips",
+      "url": "https://www.yourwebsite.com/top-blogs",
+      "description": "Explore the top 10 blogs covering a wide range of topics with expert insights and tips. Stay updated with the latest trends, guides, and informative blog posts.",
+      "author": {
+        "@type": "Organization",
+        "name": "YourWebsiteName"
+      },
+      "image": "https://www.yourwebsite.com/image/og-image.jpg"
+    }
     </script>
+ 
+    
+    <!-- Technical SEO: Remove Bootstrap CSS, add custom optimized styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Your optimized custom styles -->
+    <script src="js/script.js"></script> <!-- Your custom JavaScript -->
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4196295282710191"
-        crossorigin="anonymous"></script>
+    <!-- Load External Libraries Asynchronously for Performance -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" async></script>
 
+    <!-- Image Optimization for SEO -->
+    <meta property="og:image" content="image/optimized-image.jpg"> <!-- Use optimized images for performance -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <!-- Start Nav -->
-    <nav class="navbar navbar-expand-lg navbar-custom position-relative fixed-top sticky">
-        <div class="container">
-            <a class="navbar-brand text-uppercase logo" href="https://www.browsejobs.site">
-                <img src="image/Logo.png" alt="logo" style="width: 200px;">
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-transparent container">
+            <a class="navbar-brand" href="calculater-index.html">
+                <img src="image/loancheckercalculator.png" alt="" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="calculater-index.html">Home Loan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personal-loan.html">Personal Loan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="car-loan.html">Car Loan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loan-emi-calculation-work.html">How It Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="diamondpricecalculator.html">Diamond Calculation</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Search Jobs
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="job-for-you.html">Job For You</a></li>
-                            <li><a class="dropdown-item" href="job-for-fresher.html">Job For Fresher</a></li>
-                            <li><a class="dropdown-item" href="work-from-home.html">Job For WFH</a></li>
-                            <li><a class="dropdown-item" href="job-for-women.html">Job For Women</a></li>
-                            <li><a class="dropdown-item" href="job-for-men.html">Job For Men</a></li>
-                            <li><a class="dropdown-item" href="job-for-student.html">Job For Student</a></li>
-                            <li><a class="dropdown-item" href="part-time-job.html">Part-Time Job</a></li>
-                            <li><a class="dropdown-item" href="remote-job.html">Remote Job</a></li>
-                            <li><a class="dropdown-item" href="hybrid-job.html">Hybrid Job</a></li>
-                            <li><a class="dropdown-item" href="steps.html">Common Rules</a></li>
-                            <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="work-from-home.html">Work From Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li class="nav-item d-block d-md-none">
-                        <a class="btn-primary ps-2 pe-2 py-1 rounded nav-link text-center" href="Contact.html">Contact
-                            Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
-            <a class="btn-primary ps-2 pe-2 py-1 rounded nav-link d-none d-md-block" href="Contact.html">Contact Us</a>
-    </nav>
-    <!-- End Nav -->
-    <!-- id="blogContainer" -->
+        </nav>
+    </header>
+
     <div class="container my-5">
-        <h2 class="text-center mb-4">Our Blog</h2>
         <div class="row g-4">
-            <!-- ---------24/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/south-africa.jpg" alt="Jobs in South Africa">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in South Africa: Best Careers in 2025</h3>
-                        <p class="blog-description">South Africa has growing industries in IT, mining, finance, and
-                            healthcare. Learn about top jobs and work visas...</p>
-                        <a href="jobs-in-south-africa.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
 
             <div class="col-md-4">
-                <article class="blog-card">
+                <div class="blog-card">
                     <div class="blog-image">
-                        <img src="image/blog/south-korea.jpg" alt="Jobs in South Korea">
+                        <img src="image/blog/loan-information.jpg" alt="Interest Rate EMI Impact" />
                     </div>
                     <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in South Korea: Work Opportunities in 2025</h3>
-                        <p class="blog-description">South Korea has a strong economy with opportunities in IT,
-                            engineering, teaching, and finance. Find the best job openings and visa options...</p>
-                        <a href="jobs-in-south-korea.html" class="btn btn-primary btn-sm">Read More</a>
+                        <span class="blog-tag">Loan Information</span>
+                        <h3 class="blog-title">The Impact of Interest Rates on Loan EMI: Explained</h3>
+                        <p class="blog-description">Discover how interest rates affect your Loan EMI. Understanding this
+                            can help you make better decisions when applying for loans.</p>
+                        <a href="interest-rate-impact-emi.html" class="btn btn-primary btn-sm">Read More</a>
                     </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/madrid.jpg" alt="Jobs in Madrid">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Madrid: Best Careers in 2025</h3>
-                        <p class="blog-description">Madrid is a booming business and tech city in Spain. Discover the
-                            best job opportunities, salaries, and work permits...</p>
-                        <a href="jobs-in-madrid.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/aucklande.jpg" alt="Jobs in Auckland">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Auckland: Top Opportunities in 2025</h3>
-                        <p class="blog-description">Auckland is a fast-growing business hub in New Zealand. Find out the
-                            best jobs, salaries, and visa options...</p>
-                        <a href="jobs-auckland.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/parise.jpg" alt="Jobs in Paris">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Paris: High-Paying Careers in 2025</h3>
-                        <p class="blog-description">Paris offers great job opportunities in fashion, IT, finance, and
-                            hospitality. Learn how to land a job in France’s capital...</p>
-                        <a href="jobs-paris.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <!-- ---------18/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/new-zealand.jpg" alt="Jobs in New Zealand">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in New Zealand: Work Opportunities in 2025</h3>
-                        <p class="blog-description">New Zealand is hiring in healthcare, construction, and IT. Check
-                            visa options, salary expectations, and how to apply...</p>
-                        <a href="jobs-in-new-zealand.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/amsterdam.jpg" alt="Jobs in Amsterdam">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Amsterdam: Work in the Netherlands in 2025</h3>
-                        <p class="blog-description">Amsterdam is a European tech hub with job openings in IT, finance,
-                            and logistics. Learn about salaries, work permits, and benefits...</p>
-                        <a href="jobs-in-amsterdam.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/Japan.jpg" alt="Jobs in Japan">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Japan: Career Opportunities in 2025</h3>
-                        <p class="blog-description">Japan offers jobs in technology, engineering, and automation.
-                            Explore job roles, visa requirements, and salary expectations...</p>
-                        <a href="jobs-in-japan.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/newyork.jpg" alt="Jobs in New York">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in New York: Work in the USA in 2025</h3>
-                        <p class="blog-description">New York is a hub for finance, technology, media, and healthcare.
-                            Discover job opportunities and visa options in 2025...</p>
-                        <a href="jobs-in-newyork.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/london-second.jpg" alt="Jobs in London">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in London: Work in the UK in 2025</h3>
-                        <p class="blog-description">London offers great jobs in finance, tech, healthcare, and media.
-                            Learn about UK work visa types and high-paying jobs...</p>
-                        <a href="jobs-in-london.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/australia.png" alt="Jobs in Australia">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Australia: Work Opportunities in 2025</h3>
-                        <p class="blog-description">Australia offers high salaries and great work-life balance in IT,
-                            engineering, healthcare, and education...</p>
-                        <a href="jobs-in-australia.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <!-- ---------17/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/29.jpg" alt="Remote Work Opportunities in 2024" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Remote Jobs</span>
-                        <h3 class="blog-title">Remote Work Opportunities in 2024</h3>
-                        <p class="blog-description">Explore the rise of remote work, the best countries for remote jobs,
-                            and how you can find your ideal remote position...</p>
-                        <a href="remote-work-opportunities-2024.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/remote-work.jpg" alt="The Rise of Remote Work Opportunities"
-                            loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Remote Work</span>
-                        <h3 class="blog-title">The Rise of Remote Work Opportunities</h3>
-                        <p class="blog-description">Discover how remote work is transforming job markets globally and
-                            the best countries to find remote opportunities...</p>
-                        <a href="the-rise-of-remote-work-opportunities.html" class="btn btn-primary btn-sm">Read
-                            More</a>
-                    </div>
-                </article>
-            </div>
-            <!-- ---------14/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/28.jpg" alt="Cybersecurity Essentials for Small Businesses" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Cybersecurity</span>
-                        <h3 class="blog-title">Cybersecurity Essentials for Small Businesses</h3>
-                        <p class="blog-description">Small businesses are increasingly targeted by cyber threats. Learn
-                            essential cybersecurity practices to protect your business...</p>
-
-                        <a href="cybersecurity-essentials-for-small-businesses.html" class="btn btn-primary btn-sm">Read
-                            More</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/27.jpg" alt="The Power of Networking for Entrepreneurs" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Entrepreneurship</span>
-                        <h3 class="blog-title">The Power of Networking for Entrepreneurs</h3>
-                        <p class="blog-description">Networking is crucial for entrepreneurs to build relationships, gain
-                            insights, and grow their business. Discover practical tips to master networking...</p>
-
-                        <a href="power-of-networking-for-entrepreneurs.html" class="btn btn-primary btn-sm">Read
-                            More</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/26.jpg" alt="Hybrid Work Models: Pros and Cons" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Work Models</span>
-                        <h3 class="blog-title">Hybrid Work Models: Understanding Pros and Cons</h3>
-                        <p class="blog-description">The hybrid work model combines remote and in-office work. Learn
-                            about its benefits and challenges to decide if it’s the right fit for your team...</p>
-
-                        <a href="hybrid-work-models-pros-cons.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/25.jpg" alt="Freelancing Tips for Beginners" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Freelancing</span>
-                        <h3 class="blog-title">Freelancing Tips for Beginners: Getting Started</h3>
-                        <p class="blog-description">Freelancing offers flexibility and freedom, but starting out can be
-                            challenging. Learn tips to kickstart your freelancing journey...</p>
-
-                        <a href="freelancing-tips-for-beginners.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <!-- ---------13/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/finland.jpg" alt="Jobs in Finland">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Finland: High-Demand Careers in 2025</h3>
-                        <p class="blog-description">Finland offers excellent job opportunities in IT, engineering, and
-                            healthcare. Learn about salaries, work culture, and visa requirements...</p>
-                        <a href="jobs-finland.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/ireland.jpg" alt="Jobs in Ireland">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Ireland: Work and Settle in 2025</h3>
-                        <p class="blog-description">Ireland has a thriving job market for IT professionals, engineers,
-                            and healthcare workers. Find out how to secure a high-paying job and a work visa...</p>
-                        <a href="jobs-ireland.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/south-africa.jpg" alt="Jobs in South Africa">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in South Africa: Work and Career Guide 2025</h3>
-                        <p class="blog-description">South Africa offers jobs in IT, engineering, finance, and
-                            healthcare. Learn about top employers, salaries, and visa processes...</p>
-                        <a href="jobs-in-south-africa.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/south-korean.jpg" alt="Jobs in South Korea">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in South Korea: Career Opportunities in 2025</h3>
-                        <p class="blog-description">South Korea has booming industries in technology, education, and
-                            engineering. Explore job prospects, visa options, and salary expectations...</p>
-                        <a href="jobs-south-korea.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/japane-main.jpg" alt="Jobs in Japan">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Japan: Work Opportunities in 2025</h3>
-                        <p class="blog-description">Japan has a strong demand for IT professionals, engineers, English
-                            teachers, and skilled workers. Discover job opportunities and visa options...</p>
-                        <a href="jobs-japan.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- ---------12/02/2025-------- -->
-            <!-- <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/jobs-in-ireland.jpg" alt="Jobs in Ireland">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Ireland: Work and Settle in 2025</h3>
-                        <p class="blog-description">Ireland has a booming job market in IT, healthcare, and finance. Find out how to get a job and settle in Ireland...</p>
-                        <a href="jobs-in-ireland.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div> -->
-
-            <!-- 12-02 tarikh na blog 24-02 ma lidha  -->
-
-            <!-- ---------11/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/berlin.jpg" alt="Jobs in Berlin">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Berlin: Top Career Options in 2025</h3>
-                        <p class="blog-description">Berlin is a fast-growing tech and business hub in Europe. Learn
-                            about job opportunities, salaries, and visa requirements...</p>
-                        <a href="jobs-berlin.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/singapore-one.jpg" alt="Jobs in Singapore">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Singapore: High-Demand Careers in 2025</h3>
-                        <p class="blog-description">Singapore is a global business hub with great job opportunities in
-                            finance, IT, and engineering. Find out how to get a job in Singapore...</p>
-                        <a href="jobs-singapore.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/sydney.jpg" alt="Jobs in Sydney">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Sydney: Best Career Opportunities in 2025</h3>
-                        <p class="blog-description">Sydney offers high-paying jobs in IT, healthcare, finance, and
-                            construction. Learn how to land a job in Australia’s top city...</p>
-                        <a href="jobs-in-sydneystat.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/toronto.jpg" alt="Jobs in Toronto">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Toronto: Best Careers in 2025</h3>
-                        <p class="blog-description">Toronto is Canada’s business capital, offering jobs in finance, IT,
-                            and healthcare. Learn how to get a job in Toronto...</p>
-                        <a href="jobs-in-torontocity.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/newyork-1.jpg" alt="Jobs in New York">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in New York: The Ultimate Guide</h3>
-                        <p class="blog-description">New York is a global job hub for finance, tech, and media
-                            professionals. Discover job openings, salary expectations, and visa requirements...</p>
-                        <a href="jobs-in-new-york.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- ---------10/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/auckland.jpg" alt="Jobs in Auckland">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Auckland: Growing Careers in New Zealand</h3>
-                        <p class="blog-description">Auckland is a hotspot for IT, healthcare, and engineering jobs.
-                            Discover job portals, visa options, and salary insights...</p>
-                        <a href="jobs-in-auckland.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/singapore.jpg" alt="Jobs in Singapore">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Singapore: A Gateway to Asia’s Job Market</h3>
-                        <p class="blog-description">Singapore offers high-paying jobs in finance, technology, and
-                            business management. Learn about work visas, job search strategies, and salaries...</p>
-                        <a href="jobs-in-singaporecity.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/sydney.jpg" alt="Jobs in Sydney">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Sydney: Opportunities in 2025</h3>
-                        <p class="blog-description">Sydney is a thriving hub for IT, finance, and healthcare
-                            professionals. Explore high-paying jobs, visa requirements, and salary expectations...</p>
-                        <a href="jobs-in-sydneycity.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/toronto.jpg" alt="Jobs in Toronto">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Toronto: Career Paths in Canada’s Largest City</h3>
-                        <p class="blog-description">Toronto is known for its diversity and economic growth. Learn about
-                            the job market, salary expectations, and visa options...</p>
-                        <a href="jobs-in-toronto.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/berlin.jpg" alt="Jobs in Berlin">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Berlin: A Hub for Tech Talent in 2025</h3>
-                        <p class="blog-description">Berlin has emerged as a leading tech hub in Europe. Explore job
-                            opportunities in software engineering, startups, and AI...</p>
-                        <a href="jobs-in-berlin.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/paris.jpg" alt="Jobs in Paris">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Paris: Exploring Career Opportunities in 2025</h3>
-                        <p class="blog-description">Paris, the city of lights, offers numerous job opportunities in
-                            fashion, tech, and hospitality. Find out how to pursue a career...</p>
-                        <a href="jobs-in-paris.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- ---------08/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/london-london.jpg" alt="Jobs in London">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in London: Your Guide to Top Careers in the UK</h3>
-                        <p class="blog-description">London continues to be a global financial hub and offers a variety
-                            of job opportunities in sectors such as finance, law, and creative industries...</p>
-                        <a href="jobs-in-londoncity.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/newyork-1.jpg" alt="Jobs in New York">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in New York: The Heart of U.S. Job Market</h3>
-                        <p class="blog-description">New York City remains one of the top destinations for career growth,
-                            with opportunities across sectors like finance, media, healthcare, and technology...</p>
-                        <a href="jobs-in-newyorkcity.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/bangalore.jpg" alt="Jobs in Bangalore">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Bangalore: Opportunities in India's Silicon Valley</h3>
-                        <p class="blog-description">Bangalore is a thriving tech hub offering numerous opportunities in
-                            software development, IT services, and startups...</p>
-                        <a href="jobs-in-bangalore.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/zurich.jpg" alt="Jobs in Zurich">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Zurich: Work Opportunities in Switzerland</h3>
-                        <p class="blog-description">Zurich is a financial hub and offers numerous opportunities in
-                            banking, finance, and IT. Find out how to secure a job...</p>
-                        <a href="jobs-in-zurich.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/sydney.jpg" alt="Jobs in Sydney">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Sydney: A Guide to Opportunities in 2025</h3>
-                        <p class="blog-description">Sydney offers great job opportunities in industries like tech,
-                            finance, and engineering. Explore how to find a job and settle down...</p>
-                        <a href="jobs-in-sydney.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/singapore.jpg" alt="Jobs in Singapore">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Singapore: The Path to Career Growth in 2025</h3>
-                        <p class="blog-description">Singapore offers career opportunities in finance, tech, healthcare,
-                            and tourism. Learn about work permits, salary expectations, and more...</p>
-                        <a href="jobs-in-singapore.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- ---------07/02/2025-------- -->
-            <!-- 7-02 na blog 18-02 ma lidha  -->
-
-            <!-- ---------06/02/2025-------- -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/dubai.jpg" alt="Jobs in Dubai">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Dubai: Work in UAE in 2025</h3>
-                        <p class="blog-description">Dubai is a booming job market in 2025. Learn about visa types,
-                            salary expectations, and how to secure your dream job in the UAE...</p>
-                        <a href="jobs-in-dubai.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/UK.jpg" alt="Jobs in the UK">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in the UK: Opportunities in 2025</h3>
-                        <p class="blog-description">Looking for a job in the UK? Discover the best careers, visa
-                            requirements, and tips to land a job in London, Manchester, and other cities...</p>
-                        <a href="jobs-in-uk.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/usa.jpg" alt="Jobs in USA">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in the USA: High-Demand Careers in 2025</h3>
-                        <p class="blog-description">The USA is one of the most popular destinations for job seekers.
-                            Learn about work visas, high-paying jobs, and top industries hiring in 2025...</p>
-                        <a href="jobs-in-usa.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/-job-germany.png" alt="Jobs in Germany">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Germany: How to Get a Job in 2025</h3>
-                        <p class="blog-description">Germany offers great job opportunities for skilled professionals.
-                            Learn about the job market, visa process, and high-demand careers...</p>
-                        <a href="jobs-in-germany.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/jobs-in-canada.jpg" alt="Jobs in Canada">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs Abroad</span>
-                        <h3 class="blog-title">Jobs in Canada: High-Demand Careers in 2025</h3>
-                        <p class="blog-description">Looking for a job in Canada? Discover the most in-demand careers,
-                            work visa requirements, and job search tips...</p>
-                        <a href="jobs-in-canada.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- ---------05/02/2025 -->
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/future-of-ecommerce.jpg" alt="The Future of E-commerce in 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">E-commerce</span>
-                        <h3 class="blog-title">The Future of E-commerce in 2025</h3>
-                        <p class="blog-description">Learn about the exciting trends and technologies that will shape the
-                            future of e-commerce in 2025...</p>
-                        <a href="future-of-ecommerce-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/digital-marketing-trends.jpg" alt="Top Digital Marketing Trends for 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Digital Marketing</span>
-                        <h3 class="blog-title">Top Digital Marketing Trends for 2025</h3>
-                        <p class="blog-description">Discover the digital marketing trends that are expected to dominate
-                            the landscape in 2025 and how to capitalize on them...</p>
-                        <a href="digital-marketing-trends-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/startups-in.jpg" alt="Top Startup Ideas to Watch in 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Startup Trends</span>
-                        <h3 class="blog-title">Top Startup Ideas to Watch in 2025</h3>
-                        <p class="blog-description">Discover the most promising startup ideas that are expected to
-                            thrive in 2025 and beyond...</p>
-                        <a href="top-startups-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/ai-in-business.jpg" alt="How AI is Transforming Businesses in 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">AI in Business</span>
-                        <h3 class="blog-title">How AI is Transforming Businesses in 2025</h3>
-                        <p class="blog-description">Explore how businesses are leveraging AI to drive efficiency,
-                            growth, and innovation in 2025...</p>
-                        <a href="ai-transforming-businesses.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/future-skills.jpg" alt="Essential Skills for the Future Workforce in 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Future Skills</span>
-                        <h3 class="blog-title">Essential Skills for the Future Workforce in 2025</h3>
-                        <p class="blog-description">As the workplace evolves, discover the top skills that will be in
-                            high demand in 2025...</p>
-                        <a href="essential-skills-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/remote-work-small.jpg" alt="Top Remote Work Opportunities for 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Remote Work</span>
-                        <h3 class="blog-title">Top Remote Work Opportunities to Explore in 2025</h3>
-                        <p class="blog-description">Looking for remote work options? Discover the best industries and
-                            roles for remote jobs in 2025 and how to secure them...</p>
-                        <a href="top-remote-work-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- -------------04/02/2025----------- -->
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/global-jobs.jpg" alt="Best Global Job Opportunities for 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Global Jobs</span>
-                        <h3 class="blog-title">The Best Global Job Opportunities in 2025: Where to Look</h3>
-                        <p class="blog-description">Looking for global job opportunities? Discover the best
-                            international job markets and industries to explore in 2025...</p>
-                        <a href="best-global-jobs-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/remot-work.jpg" alt="Future of Remote Jobs in 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Remote Work</span>
-                        <h3 class="blog-title">The Future of Remote Jobs in 2025: Trends You Need to Know</h3>
-                        <p class="blog-description">Discover the emerging trends in remote jobs for 2025 and how to stay
-                            ahead of the competition...</p>
-                        <a href="future-remote-jobs-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/womenempowermen.jpg" alt="Work Opportunities for Women 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Women Empowerment</span>
-                        <h3 class="blog-title">Empowering Women with Remote & Flexible Work in 2025</h3>
-                        <p class="blog-description">Explore the top work opportunities for women in 2025, focusing on
-                            remote, hybrid, and flexible jobs...</p>
-                        <a href="work-for-women-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/Jobs & Careers-third.jpg" alt="Hybrid Work Jobs 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs & Careers</span>
-                        <h3 class="blog-title">Hybrid Work Jobs You Can Apply for in 2025</h3>
-                        <p class="blog-description">Explore hybrid job opportunities that combine flexibility with
-                            in-office collaboration in 2025...</p>
-                        <a href="hybrid-work-jobs-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/Jobs & Careers.jpg" alt="Remote Jobs 2025">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Jobs & Careers</span>
-                        <h3 class="blog-title">Top Remote Job Opportunities in 2025</h3>
-                        <p class="blog-description">Explore the growing world of remote work and discover the top
-                            opportunities for professionals in 2025...</p>
-                        <a href="remote-jobs-2025.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/techonology-first.jpg" alt="AI Trends 2024">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Technology</span>
-                        <h3 class="blog-title">AI Trends That Will Shape 2024-2025</h3>
-                        <p class="blog-description">Discover how AI is transforming industries and what to expect in
-                            2024...</p>
-                        <a href="ai-trends-2024.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- -----------03/02/2025----------- -->
-            <!-- new 2 -->
-            <!-- <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/24.jpg" alt="Women in Technology: Career Paths" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Women in Tech</span>
-                        <h3 class="blog-title">Women in Technology: Inspiring Career Paths</h3>
-                        <p class="blog-description">Explore how women are breaking barriers in technology and discover
-                            rewarding career paths available in the tech industry...</p>
-
-                        <a href="women-in-technology-career-paths.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div> -->
-
-            <!-- new 1 -->
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/23.jpg" alt="Part-Time Jobs for Retirees" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Part-Time Work</span>
-                        <h3 class="blog-title">Part-Time Jobs for Retirees: Stay Active and Earn</h3>
-                        <p class="blog-description">Retirement doesn’t mean the end of work! Explore part-time jobs that
-                            allow retirees to stay engaged, earn, and follow their passions...</p>
-
-                        <a href="part-time-jobs-retirees.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/18.jpg" alt="Career Tips for Students" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Student Jobs</span>
-                        <h3 class="blog-title">How to Build a Successful Career as a Student: Internship and Entry-Level
-                            Job Tips</h3>
-                        <p class="blog-description">As a student, gaining work experience early can set the foundation
-                            for a successful career. Discover tips on finding internships, securing entry-level
-                            positions, and developing professional skills while balancing your studies.</p>
-
-                        <a href="build-successful-career-student.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/19.jpg" alt="Career Change for Midlife Professionals" loading="lazy">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Career Change</span>
-                        <h3 class="blog-title">Job Search Strategies for Career Changers and Midlife Professionals</h3>
-                        <p class="blog-description">Changing careers later in life requires a different approach. Learn
-                            strategies for midlife professionals looking to transition into new industries, ...</p>
-
-                        <a href="job-search-strategies-career-changers.html" class="btn btn-primary btn-sm">Read
-                            More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/job-in-china.jpg" alt="Job Opportunities in Canada" class="img-fluid">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Career</span>
-                        <h3 class="blog-title">Job Opportunities in Canada: A Guide to Working in Canada</h3>
-                        <p class="blog-description">Canada is known for its great work-life balance and excellent career
-                            opportunities. Learn about the job market and the best ways to find work in Canada.</p>
-                        <a href="job-in-canada.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/Performance.jpg" alt="Improve Website Speed">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Performance</span>
-                        <h3 class="blog-title">How to Improve Website Speed and Performance</h3>
-                        <p class="blog-description">Website speed is crucial for SEO and user experience. Learn the best
-                            optimization techniques...</p>
-                        <a href="website-speed-performance.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="image/blog/design.jpg" alt="Web Design Trends">
-                    </div>
-                    <div class="p-3">
-                        <span class="blog-tag">Design</span>
-                        <h3 class="blog-title">Top 10 Web Design Trends for 2024</h3>
-                        <p class="blog-description">Stay ahead in the web design industry with the latest trends and
-                            techniques for 2024...</p>
-                        <a href="web-design-trends.html" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                </article>
-            </div>
-
-
-
-
-
-
-            <!-- ------------------ -->
-
-            <!-- ----------ADS----------- -->
-            <div class="row justify-content-between">
-                <div class="col-md-4">
-                    <script async
-                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4196295282710191"
-                        crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
-                        data-ad-format="fluid" data-ad-client="ca-pub-4196295282710191" data-ad-slot="9235064058"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <div class="col-md-4">
-                    <script async
-                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4196295282710191"
-                        crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
-                        data-ad-format="fluid" data-ad-client="ca-pub-4196295282710191" data-ad-slot="9235064058"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <div class="col-md-4">
-                    <script async
-                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4196295282710191"
-                        crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
-                        data-ad-format="fluid" data-ad-client="ca-pub-4196295282710191" data-ad-slot="9235064058"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                 </div>
             </div>
-            <!-- ------------------------ -->
 
-            <div class="text-center mt-4">
-                <!-- <button id="loadMoreBtn" class="btn btn-primary">Load More</button> -->
-                <a href="index.html" type="" class="btn btn-primary">Back</a>
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="image/blog/home-loans.jpg" alt="Home Loan EMI Calculator" />
+                    </div>
+                    <div class="p-3">
+                        <span class="blog-tag">Home Loans</span>
+                        <h3 class="blog-title">Why a Loan EMI Calculator is Crucial for Home Loan Borrowers</h3>
+                        <p class="blog-description">Considering a home loan? Learn why using a Loan EMI Calculator
+                            is a must for home loan borrowers and how it helps in budgeting and financial planning.
+                        </p>
+                        <a href="home-loan-emi-calculator.html" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="image/blog/financial-advice.jpg" alt="Benefits of EMI Calculator" />
+                    </div>
+                    <div class="p-3">
+                        <span class="blog-tag">Financial Advice</span>
+                        <h3 class="blog-title">Top 5 Benefits of Using a Loan EMI Calculator Before Borrowing</h3>
+                        <p class="blog-description">Find out how a Loan EMI Calculator can help you make informed
+                            decisions before taking a loan. Avoid unexpected financial strain with these tips.</p>
+                        <a href="loan-emi-benefits.html" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="image/blog/financial-tools.jpg" alt="Loan EMI Calculator" />
+                    </div>
+                    <div class="p-3">
+                        <span class="blog-tag">Financial Tools</span>
+                        <h3 class="blog-title">How to Use a Loan EMI Calculator for Smart Financial Planning</h3>
+                        <p class="blog-description">Learn how an EMI calculator helps you plan your loan repayments
+                            effectively. From home loans to personal loans, find the best options for you.</p>
+                        <a href="loan-emi-calculator-guide.html" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- back to home -->
-    <!-- <div class="container">
-        <div class="row mb-4 align-items-center justify-content-center">
-            <div class="col-3 justify-content-center mx-auto d-flex">
 
-                <a href="index.html" type="" class="btn btn-primary">Back</a>
-            </div>
-
-        </div>
-    </div> -->
-
-    <!-- Start CTA -->
-    <div class="section cta">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <div>
-                        <h2 class="text-white">Join Our Portal</h2>
-                        <p class="text-white-50 mb-0"> "Be a part of our platform and unlock endless opportunities.
-                            Experience a streamlined process free from redundancy, designed to help you achieve your
-                            goals effortlessly."</p>
-                    </div>
-                    <div class="cta-box text-end">
-                        <form action="#">
-                            <input placeholder="Your Email Address" type="text">
-                            <button type="submit" class="btn btn-light">Apply Now</button>
-                        </form>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-12 col-lg-6">
-                    <ul class="d-flex flex-column flex-md-row ps-0 text-center text-lg-start mt-4 mt-lg-0">
-                        <li><a href="index.html" class="nav-link text-light">Home</a></li>
-                        <li><a href="about.html" class="nav-link text-light">About Us</a></li>
-                        <li><a href="privacy-policy.html" class="nav-link text-light">Privacy Policy</a></li>
-                        <li><a href="terms-and-conditions.html" class="nav-link text-light">Terms & Conditions</a></li>
-                        <li><a href="Contact.html" class="nav-link text-light">Contact Us</a></li>
-                        <li><a href="blog.html" class="nav-link text-light">Blog</a></li>
+    <footer class="text-white py-3">
+        <div class="text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-2 mb-md-0">&copy; 2025 Loan Calculator Website</p>
+                </div>
+                <hr class="d-block d-md-none mb-0">
+                <div class="col-md-6">
+                    <ul class="list-inline mb-0 mt-2 mt-md-0">
+                        <li class="list-inline-item px-4 px-md-2"><a href="privacy-policy.html"
+                                class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="list-inline-item px-4 px-md-2"><a href=" terms&conditions.html"
+                                class="text-white text-decoration-none">Terms
+                                & Conditions</a></li>
+                        <li class="list-inline-item px-4 px-md-2"><a href="blog.html"
+                                class="text-white text-decoration-none">Blog</a></li>
                     </ul>
-                </div><!--end col -->
-            </div><!-- end row -->
-            <img src="image/cta-bg.png" class="cta-img" alt="image">
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- End CTA -->
-
-    <!-- Javascript -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- custom js -->
-    <script src="js/app.js"></script>
-
-    <!-- <script> 
-        document.addEventListener('DOMContentLoaded', () => {
-            const blogCards = document.querySelectorAll('.blog-card');  
-            const loadMoreBtn = document.getElementById('loadMoreBtn');
-
-            let visibleCount = 0;  
-            const blogsPerClick = 9;  
-
-            const showBlogs = () => {
-                for (let i = visibleCount; i < visibleCount + blogsPerClick; i++) {
-                    if (blogCards[i]) {
-                        blogCards[i].classList.add('visible');
-                    }
-                }
-                visibleCount += blogsPerClick;
- 
-                if (visibleCount >= blogCards.length) {
-                    loadMoreBtn.style.display = 'none';
-                }
-            };
- 
-            showBlogs();
- 
-            loadMoreBtn.addEventListener('click', showBlogs);
-        });
-    </script> -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

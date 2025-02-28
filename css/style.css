@@ -961,3 +961,257 @@ textarea.form-control {
   text-overflow: ellipsis;
   /* Adds "..." at the end of the text */
 }
+
+
+
+/* calculater css */
+/* General Styling */
+.calculate {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.calculate ul,
+.calculate ol {
+  padding-left: 12px !important;
+}
+
+/* .container{
+  width: 80%;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -15px;
+  margin-right: -15px;
+} */
+.calculate .container2 {
+  background-color: #eaedf0;
+  border: 1px dotted #000;
+}
+
+.calculate .logo {
+  width: 250px;
+}
+
+.calculate header {
+  background-color: #4CAF50;
+  padding: 1rem;
+}
+
+.calculate header .navbar {
+  background: none !important;
+  border: none !important;
+}
+
+.calculate header .nav-link,
+.calculate header .navbar-brand {
+  color: #fff !important;
+}
+
+.calculate header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.calculate header nav ul li {
+  margin: 0 15px;
+}
+/* .navbar-expand-lg .navbar-nav .nav-link{
+  transition: all .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+  color: #dc3545 !important;
+} */
+.calculate header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.calculate .calculator-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.calculate .calculator-section input,
+.calculate .calculator-section button {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 5px;
+}
+
+.calculate .calculate-btn {
+  max-width: 300px !important;
+  background-color: #4CAF50 !important;
+  border: none !important;
+}
+
+.calculate #result {
+  margin-top: 2rem;
+}
+
+.calculate #loan-chart {
+  margin-top: 2rem;
+}
+
+.calculate .section-gap {
+  padding: 50px 0;
+}
+
+.calculate button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.calculate footer {
+  background-color: #4CAF50;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.calculate footer p {
+  margin-bottom: 0;
+}
+
+.calculate .accordion-body,
+.calculate .accordion-button {
+  background-color: #eaedf0 !important;
+}
+
+.calculate .accordion-item {
+  background-color: #eaedf0 !important;
+}
+
+.calculate .accordion {
+  border: 1px solid #9e9e9e !important;
+  border-radius: 5px;
+}
+
+.calculate .accordion-button:focus {
+  z-index: 3;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.calculate .accordion-header button {
+  max-width: 100%;
+}
+
+.calculate .main-content h4 {
+  font-size: 24px;
+}
+
+.calculate .main-content p {
+  font-size: 16px;
+}
+
+.calculate .blog-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.calculate .blog-card:hover {
+  transform: scale(1.02);
+}
+
+.calculate .blog-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.calculate .blog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.calculate .blog-description {
+  color: #555;
+}
+
+.calculate .calculate .blog-card .blog-title {
+  display: -webkit-box;
+  /* Enables the flexible box layout */
+  -webkit-line-clamp: 2;
+  /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  /* Vertical box layout */
+  overflow: hidden;
+  /* Hides overflowing content */
+  text-overflow: ellipsis;
+  /* Adds "..." at the end of the text */
+}
+
+.calculate .blog-card .blog-description {
+
+  display: -webkit-box;
+  /* Enables the flexible box layout */
+  -webkit-line-clamp: 2;
+  /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  /* Vertical box layout */
+  overflow: hidden;
+  /* Hides overflowing content */
+  text-overflow: ellipsis;
+  /* Adds "..." at the end of the text */
+}
+
+.calculate #diamondTabContent .card{
+  background-color: transparent;
+}
+.calculate #diamondTabContent .card input{
+  background-color: transparent;
+
+}
+.accordion-body, .calculate .accordion-button {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+
+
+
+/* responsive */
+@media (max-width: 768px) {
+  .calculate .section-gap {
+      padding: 20px 0;
+  }
+
+  .calculate .main-banner-title {
+      font-size: 20px;
+  }
+
+  .calculate .main-content h4 {
+      font-size: 16px;
+  }
+
+  .calculate .main-content p {
+      font-size: 12px;
+  }
+
+  .calculate .calculator-section {
+      padding: 1rem 2rem;
+  }
+
+  .calculate .logo {
+      width: 200px;
+  }
+
+}
